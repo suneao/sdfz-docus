@@ -9,6 +9,14 @@
     "preview": "nuxi preview",
     "lint": "eslint ."
   },
+  "exports": {
+  ".": {
+    "types": "./lib/index.d.ts",
+    "require": "./lib/index.js",
+    "default": "./lib/esm/index.js"
+  },
+  "./lib": "./lib/index.js"
+  },
   "devDependencies": {
     "@nuxt-themes/docus": "^1.13.1",
     "@nuxt/devtools": "^0.6.7",
